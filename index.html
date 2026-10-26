@@ -154,7 +154,7 @@
   .services { padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 7vw, 6rem); border-top: 1.5px solid var(--rule); }
   .services h2 { margin-bottom: 1.5rem; max-width: 16ch; }
   .services-intro { max-width: 62ch; font-size: 1.2rem; margin-bottom: clamp(2rem, 4vw, 3.25rem); }
-  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.75rem); align-items: stretch; }
+  .cards { scroll-margin-top: 1rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.75rem); align-items: stretch; }
   .card {
     background: var(--card); color: var(--card-ink);
     border-radius: 16px;
@@ -366,10 +366,10 @@
   <header class="top">
     <a class="brand" href="#top">Music tutoring with Chase</a>
     <nav aria-label="Main">
-      <a class="link" href="#services">Book lessons</a>
+      <a class="link" href="#lessons">Book lessons</a>
       <a class="link" href="#about">About</a>
       <a class="link" href="#contact">Contact</a>
-      <a class="btn alt" href="#contact">Book now</a>
+      <a class="btn alt" href="#lessons">Book now</a>
     </nav>
   </header>
 </div>
@@ -430,7 +430,7 @@
       <h2>Personalized Instruction Services</h2>
       <p class="services-intro">I'm a Berklee-trained musician with a background in songwriting, bringing structured, personalized instruction to every lesson. With experience teaching at School of Rock and working with kids as a camp counselor, I'm just as comfortable with a nervous first-timer as I am with a student ready to dig into music theory. Lessons are taught from a home studio near Princeton, NJ, with Zoom options available for students who prefer to learn remotely.</p>
 
-      <div class="cards">
+      <div class="cards" id="lessons">
         <article class="card free">
           <div class="photo"><img src="images/trial.jpg" alt="Chase waving hello while holding a red electric guitar on a stone wall outside the studio door" width="768" height="1024" loading="lazy" decoding="async"><span class="badge">45 min, free</span></div>
           <div class="card-body">
